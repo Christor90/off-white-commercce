@@ -1,19 +1,34 @@
+'use client';
+
+import { useState } from 'react';
+import Loader from '@/components/common/Loader';
 import Hero from '@/components/home/Hero';
-import Info from '@/components/home/Info';
 import NewArrival from '@/components/home/NewArrival';
-import PromoSection from '@/components/home/PromoSection';
 import StackingCards from '@/components/home/StackCards';
+import PromoSection from '@/components/home/PromoSection';
+import Info from '@/components/home/Info';
+import About from '@/components/home/About';
 
 export default function Home() {
-  return (
-    <div>
-      <Hero />
-      <NewArrival />
-      <PromoSection />
-      <StackingCards />
-      <Info />
+  const [showLoader, setShowLoader] = useState(true);
 
-      {/* More sections will be added here */}
-    </div>
+  return (
+    <>
+      {showLoader && <Loader onFinish={() => setShowLoader(false)} />}
+      {!showLoader && (
+        <>
+          <div>
+            <Hero />
+            <About />
+            <NewArrival />
+            <PromoSection />
+            <StackingCards />
+            <Info />
+
+            {/* More sections will be added here */}
+          </div>
+        </>
+      )}
+    </>
   );
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import coverImg from '../../public/images/bgcover2.jpg';
+import coverImg from '../../public/images/bgcover3.jpg';
 
 export default function Hero() {
   return (
