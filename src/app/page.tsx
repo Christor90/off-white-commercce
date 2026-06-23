@@ -8,6 +8,7 @@ import StackingCards from '@/components/home/StackCards';
 import PromoSection from '@/components/home/PromoSection';
 import Info from '@/components/home/Info';
 import About from '@/components/home/About';
+import WhyPickUs from '@/components/home/WhyPickUs';
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -23,6 +24,7 @@ export default function Home() {
             <NewArrival />
             <PromoSection />
             <StackingCards />
+            <WhyPickUs />
             <Info />
 
             {/* More sections will be added here */}
