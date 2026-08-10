@@ -9,6 +9,7 @@ import PromoSection from '@/components/home/PromoSection';
 import Info from '@/components/home/Info';
 import About from '@/components/home/About';
 import WhyPickUs from '@/components/home/WhyPickUs';
+import KeyStats from '@/components/home/KeyStats';
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -25,6 +26,7 @@ export default function Home() {
             <PromoSection />
             <StackingCards />
             <WhyPickUs />
+            <KeyStats />
             <Info />
 
             {/* More sections will be added here */}

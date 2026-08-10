@@ -6,7 +6,6 @@ import Image, { StaticImageData } from 'next/image';
 import Image1 from '../../public/images/img1.jpg';
 import Image2 from '../../public/images/img2.jpg';
 import Image3 from '../../public/images/img3.jpg';
-// import Image4 from '../../public/images/img4.jpg';
 
 interface AboutCard {
   id: number;
